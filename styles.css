@@ -1,3 +1,7 @@
+:root{
+    --primary-color:#1f5a72;
+    --secondary-color: rgb(204, 120, 17);
+}
 *{
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -16,7 +20,7 @@
 }
 
 #btn-spanish, #btn-english{
-    background-color:rgb(52, 123, 151);
+    background-color: var(--primary-color);
     padding: 5px 12px;
     color: aliceblue;
     font-size: 0.9em;
@@ -25,13 +29,15 @@
     font-weight: 400;
     letter-spacing: 0.1em;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s;
 }
 #btn-spanish:hover, #btn-english:hover{
-    background-color:  rgb(64, 92, 104);
+    background-color:  var(--primary-color);
+    opacity: 90%;
 }
 #btn-spanish:active, #btn-english:active{
-    background-color: rgb(172, 101, 14);
+    background-color: var(--secondary-color);
+    transform: scale(0.95);
 }
 .container-content{
     flex-direction: column;
